@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7tfmw0RQ8gUsW6GMl3uTFiPlf52Vq6hFGg&usqp=CAU">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+	<title>HTMl</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		table{
+			width: 100%;
+			border-collapse:collapse;
+			margin-top: 1px;
+			
+		}
+		td,th{
+			 border: 1px solid #dddddd;
+             text-align: left;
+             padding: 6px;
+
+		}
+		th{
+			color: white;
+		}
+		tr:nth-child(even)
+		{
+			background-color: #dddddd;
+		}
+		button{
+			border: 1px solid green;
+			background-color: green;
+			color: white;
+			padding: 10px;
+		}
+		img{
+			
+			height: 50px;
+			width: 80px;
+		}
+		th{
+			background-color: blue;
+		}
+		ul {
+         list-style-type: none;
+         height: 50%;
+         width: 100%;
+         overflow: hidden;
+         margin: 0;
+
+        }
+
+    li {
+        float: left;
+       }
+
+    li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+      }
+
+      li a:hover {
+          background-color: yellow;
+      }
+
+      .active {
+         background-color: green;
+      }
+      #overflowTest {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      width: 100%;
+      height: 100px;
+     overflow: auto;
+     border: 1px solid #ccc;
+     font-size: 20px;
+    }
+    
+	
+
+		.container-fluid{
+			position: relative;
+		}
+		.last{
+			border: 10px inset; black;
+			padding: 10px;
+		} 
+		i{
+			margin-right: 12px;
+		}
+		p{
+			font-family: bold;
+			text-indent: 26px;
+		}
+	</style>
+</head>
+<body style="background-color:yellow;">
+	
+	<ul style="background-color:green;" >
+    		<li><a class="active" href="intro.html"><i class="fa-solid fa-house"></i>INTRO</a></li>
+    		<li><a class="active" href="html.html"><i class="fa-brands fa-html5"></i>HTML</a></li>
+    		<li><a class="active" href="CSS.html"><i class="fa-brands fa-css3-alt"></i>CSS</a></li>
+    		<li><a class="active" href="JAVASCRIPT.html"><i class="fa-brands fa-square-js"></i>JAVASCRIPT</a></li>
+    		<li><a class="active" href="BOOTSTRAP.html" style="float:right;"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</a></li>
+    <form>
+      	<label for="search"><i class="fa-solid fa-magnifying-glass" style="margin-top: 18px;margin-left: 600px;"></i></label>
+      	<input type="search" id="search" style="margin-top: 10px;width: 200px;border-radius: 25px;" placeholder="search....">
+      	<i class="fa-solid fa-envelope" style="margin-left: 40px;"></i>
+    </form>
+  </ul>
+  
+    <div class="container-fluid">
+		<div class="row" class="glow">
+		  <div class="col-sm-3" style="background-color:#03effc;height: 900px;">
+				<b><p style="margin-top: 20px; color: black;">HTML (Hypertext Markup Language) is a markup language used for creating web pages and other information that can be displayed in a web browser. It was first created in 1989 by Tim Berners-Lee, a British computer scientist who is considered the inventor of the World Wide Web. HTML was originally developed as a way to share scientific and technical information among researchers.</p></b>
+
+      <b><p style="color:black;">  HTML 3.2, released in 1997, introduced support for cascading style sheets (CSS) and client-side scripting with JavaScript. HTML 4.0, released in 1998, included new tags for frames and multimedia, as well as support for internationalization and accessibility.</p></b>
+
+       <b><p style="color:black;">HTML5, the current version of HTML, was released in 2014. It includes new features such as support for video and audio playback, canvas for 2D graphics, and new semantic tags for better document structure. HTML5 also introduced new APIs for geolocation, local storage, and web workers, among other things.<br><br>
+
+       <b> <p style="color:black;";>HTML has evolved to become a critical technology for the web. It provides a standardized way to create and share information on the internet, and has enabled the development of countless websites, web applications, and online services.</p></b>
+       <br>
+        <P>
+				  <h1 style="margin-left: 10px;font-size: 25px;color: blue;">BASIC STRUCTURE OF HTML</h1>
+				  <img src="https://lenadesign.org/wp-content/uploads/2021/06/html-basic-structure.jpg" style="width:100%;height: 280px;">
+			</P>
+     </div>
+
+		   <div class="col-sm-7" style="background-color: brown;height: 900px;">
+	<table style="background-color:hotpink;width: 100%;margin-top: 1px;height: 600px;">
+		<tr>
+			<th>ATTRIBUTE</th>
+			<th>DEFINITION</th>
+			<th>SYNTAX</th>
+			<th>SAMPLE OUTPUT</th>
+		</tr>
+		<tr>
+	
+			<td>heading (h1-h6)</td>
+			<td>HTML headings are titles or subtitles that you want to display on a webpage.</td>
+			<td>
+				<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHgGYAmtpqp2r5mkjCXQppH8r96jeU-Ncu3g&usqp=CAU" target="_self" style="border-radius: 50%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				<p id="demo"></p>
+				<button type="button" onclick='document.getElementById("demo").innerHTML="<h1>Heading1</h1>"'>click here</button>
+			</td>
+                
+		</tr>
+		<tr>
+			<td>paragraph(p)</td>
+			<td>A paragraph always starts on a new line, and is usually a block of text.</td>
+			<td>
+				<a href="https://i.stack.imgur.com/NvuJP.png" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				<p id="demo1"></p>
+				<button type="button" onclick='document.getElementById("demo1").innerHTML="<p>This is a paragraph.</p>"'>click here</button>
+			</td>
+                
+		</tr>
+		<tr>
+			<td>color</td>
+			<td>HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</td>
+			<td>
+				<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStG2enFJp19ayC5MF13ya-4Yh_UwE32hW4Fw&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				<p id="demo3"></p>
+				<button type="button" onclick='document.getElementById("demo3").innerHTML="<h1 style=background-color:Violet>Violet</h1>"'>click here</button>
+			</td>
+                
+		</tr>
+		<tr>
+			<td>images</td>
+			<td>Images are not technically inserted into a web page; images are linked to web pages. </td>
+			<td>
+				<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTtD8BVIdwLAjh4StOEzKCEveHxsJWXEm_MV8DThkdI-kLxRrOUE21y5s1cODiCNRJdc&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				 <img  id="myImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMtQZfmiU68G7fkPNeGOjnobh2BbjJO4w3Q&usqp=CAU" alt="The Pulpit Rock" width="304" height="228" style="border-radius: none;" >
+
+                <p></p>
+
+             
+
+                 <p id="demo"></p>
+
+                 <script>
+                 function myFunction() {
+                   var x = document.getElementById("myImg").src;
+                   document.getElementById("demo").innerHTML = x;
+                }
+                </script>
+			</td>
+                
+		</tr>
+		<tr>
+			<td>links</td>
+			<td>Links are found in nearly all web pages. Links allow users to click their way from page to page. </td>
+			<td>
+				<a href="https://linuxhint.com/wp-content/uploads/2022/04/image3-46.png" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				 <a href="https://www.google.com/search?sxsrf=APwXEdegCtULaUqOsA99oDKM5tiWbUw-SQ:1683361337265&q=google&spell=1&sa=X&ved=2ahUKEwih4aTUoeD-AhXLXmwGHd45BSkQBSgAegQICRAB&biw=1280&bih=569&dpr=1.5" style="text-decoration: none;color: black;padding: 20px;">visit</a>
+			</td>
+                
+		</tr>
+		<tr>
+			</div>
+		
+	</div>
+	<br></br>
+			<td>Tables</td>
+			<td> An HTML table consists of one table element and one or more tr, th, and td elements.
+			<td>
+				<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoq59Cbs9wb-P3VxeylwhSMPAlSpg2B3_xmp-RDR8Bd4Yb6IlmFfpr_4l3pAubKrOh1u0&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+			</td>
+			<td>
+				
+
+                <img  id="myImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8OSGi8b-DgFKLpwFB3FCia6fERlP7o33MrfKQKI7_3PIehgNfPhQvEVcuTxrMIYfbsA&usqp=CAU" alt="The Pulpit Rock" width="304" height="228" style="border-radius: none;" >
+
+                <p></p>
+
+             
+
+                 <p id="demo"></p>
+
+                 <script>
+                 function myFunction() {
+                   var x = document.getElementById("myImg").src;
+                   document.getElementById("demo").innerHTML = x;
+                }
+                </script>
+
+               
+			</td>
+                
+		</tr>
+	</table>
+	<br>
+</br>
+    <div class="last">
+     <b><p style="color: black;margin-left: 30px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJy2e5IG-BTY-6Xu9ElkqAT_ERc9EkYuv2A&usqp=CAU" alt="Pineapple" style="width:170px;height:170px;margin-right:25px; float: left;margin-left: 30px;">
+      DISCOVER OF HTML :	Tim Berners-Lee<br>
+      YEAR : 1993<br>
+      versions<br>
+     
+      1993- HTML 1.0 is released. Not many developers are creating websites at this time.<br>
+      1995- HTML 2.0 is published. ...<br>
+      1997- HTML 3.0 was invented. ...<br>
+      1999- The widely-used HTML 4.0 comes out. ...<br>
+      2014- HTML 5.0 is released and used worldwide.<br></b>
+
+     </p> 
+    </div>
+  </div>
+     
+    <div class="col-sm-2" style="background-color:#0728e6;height: 900px;color: white;">
+    	<h1>Html forms</h1><br>
+    	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIP7e-CPcIzV5rA3TF6Wamw1dU1Nisx7qfTn3dW2_bYsxFoI8Xf2MYZ8OsobUAo7S3dE&usqp=CAU" style="height:400px;width:240px">
+    	<h1>Html maps</h1>
+    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30638.238637025057!2d80.4080477597648!3d16.283050898036773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a751769a7dd99%3A0x839670a6ecf06a7!2sR%20Agraharam%2C%20Guntur%2C%20Andhra%20Pradesh%20522003!5e0!3m2!1sen!2sin!4v1684596227327!5m2!1sen!2sin" width="240" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    	<h1>steps</h1>
+    	
+    	1) open google maps
+    	<br>
+    	2) select share option
+    	<br>
+    	3) select "embed a map" option.
+    	<br>
+    	4) finally copy html code.
+    
+    </div>	
+
+
+     
+	
+</body>
+</html>

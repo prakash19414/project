@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7tfmw0RQ8gUsW6GMl3uTFiPlf52Vq6hFGg&usqp=CAU">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+	<title>INTRO</title>
+	<style>
+		button{
+			color: white;
+		    font-size: 30px;
+			border-radius: 15px;
+			
+			background-color: blue;
+			
+			
+		}
+		
+
+		}
+		button:hover{
+			background-color: blue;
+			cursor: pointer;
+			color: blue;
+		}
+		input:hover{
+			outline: thin solid blue;
+
+		}
+		input{
+			height: 25px;
+			
+
+		}
+		i{
+			margin-right: 14px;
+		}
+		.glow{
+			color: white;
+			text-align: center;
+			letter-spacing: 2px;
+			font-size: 20px;
+			text-transform: uppercase;
+			border: 5px solid green;
+			animation: glow 1s ease-in-out infinite alternate;
+		}
+		@keyframes glow
+		{
+			from
+			{
+				box-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 30px #5443c4,0 0 40px #5443c4,0 0 50px #5443c4,0 0 60px #5443c4;
+				
+			}
+			to
+			{
+				box-shadow: 0 0 20px #fff,0 0 30px #2a0afa,0 0 40px #2a0afa,0 0 50px #2a0afa,0 0 60px #2a0afa,0 0 70px #2a0afa;
+			   
+			}
+		}
+		ul {
+         list-style-type: none;
+         height: 50px;
+         width: 100%;
+         overflow: hidden;
+         margin:  0;
+       }
+
+    li {
+        float: left;
+       }
+
+    li a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+      }
+
+      li a:hover {
+          background-color: yellow;
+      }
+
+      .active {
+         background-color: green;
+      }
+      h3{
+      	text-align: center;
+      	background-color: greenyellow;
+        color: black;
+        border-radius: 50px;
+        border: 4px solid black;
+        width: 240px;
+        margin-left: 400px;
+        padding: 5px;
+
+      }
+      p{
+      	color: black;
+      	font-size: 20px;
+      	word-spacing: 3px;
+      	text-indent: 25px;
+
+      }
+      img{
+      	width: 1000px;
+      	height: 400px;
+      	margin: 0 10px;
+
+      }
+      .user{
+      	border-left: 4px solid  #7b1798;
+	      margin-top: 50px;
+	      margin-bottom: 50px;
+	     
+
+      }
+      .user-details{
+      	display: inline-block;
+	      font-size: 20px;
+	      text-indent: 15px;
+      }
+      .users{
+      		
+	      margin-top: 50px;
+	      margin-bottom: 50px;
+      }
+      h5{
+      	text-align: center;
+      	font-size: 20px;
+      	color:darkred;
+      }
+      h6{
+      	text-align: center;
+      	font-size: 30px;
+      	color:darkyellow;
+      }
+
+	</style>
+</head>
+<body>
+	
+	<div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-4" style="background-color: #03effc;height:1300px">
+    	<h2 class="glow">FRONTEND</h2>
+    	<form>
+    		<label for="name"></label>
+    		<input type="name" id="name" placeholder="username" style="margin-top: 130px;margin-left: 120px;height: 30px;">
+    	</form><br>
+    	 <form>
+		<label for="pass"></label>
+		<input type="password" id="pass" placeholder="Password" style="margin-left: 120px;height: 30px;">
+	    </form><br>
+	 
+		<button style="margin-left:140px;border-radius:none;">Login in</button><br>
+		<form>
+			<input type="checkbox" id="check" style="width:10px;margin-left: 40px;width: 20px;">
+			<label><b><h1 style="color:black;font-size: 20px;"><sup>remind me</sup></h1></b></label>
+		<a href="#" style="color: blue;font-size: 19px;margin-left: 180px;"><b>forget password ?</b></a>
+	    </form>
+		<hr style="color:blue;"><br>
+		<div style="margin-left:120px">
+			<button><i class="fa-brands fa-google"></i>with google</button><br></br>
+			<button><i class="fa-brands fa-facebook"></i>with facebook</button><br></br>
+			<button><i class="fa-brands fa-twitter"></i>with twitter</button>
+		</div><hr>
+		<h5><b>DEVELOPERS</b></h5>
+		<div class="user">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp3DxP80ArpRzsB0XWBG9Ow5GeuefbLrUHw&usqp=CAU" style="border-radius: 50%;width: 100px;height: 100px;">
+		 <p class="user-details"><b>jhon</b><br>co-founder at xyz</p><br></br><br>
+		</div>
+		<div class="users"> 
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduQaw52XvsA9qaIF5DwgFcM-18n8ilqYBiTkXn5a_yWKrrxWk" style="border-radius: 50%;width: 100px;height: 100px; ">
+		 <p class="user-details"><b>andrew</b><br>co-founder at xyz</p><br><br><br>
+		 <h6 style="border-top: 4px solid #7b1798;">Reviews</h6>
+		 <textarea rows="5" cols="60" placeholder="Add a comment"></textarea>
+		 <br>
+		 <form>
+		 	<button style="margin-left:150px">submit</button>
+		 </form>
+		
+		</div> 
+		
+    </div>
+    <div class="col-sm-8"  style="background-color:pink; height: 1300px;">
+    	<ul style="background-color:green;background-size: cover;">
+    			<li><a class="active" href="intro.html"><i class="fa-solid fa-house"></i>INTRO</a></li>
+    		<li><a class="active" href="html.html"><i class="fa-brands fa-html5"></i>HTML</a></li>
+    		<li><a class="active" href="CSS.html"><i class="fa-brands fa-css3-alt"></i>CSS</a></li>
+    		<li><a class="active" href="JAVASCRIPT.html"><i class="fa-brands fa-square-js"></i>JAVASCRIPT</a></li>
+    		<li><a class="active" href="BOOTSTRAP.html" style="float:right;"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</a></li>
+      
+      <form>
+      	<label for="search"><i class="fa-solid fa-magnifying-glass" style="margin-top: 18px;margin-left: 60px;"></i></label>
+      	<input type="search" id="search" style="margin-top: 10px;width: 200px;border-radius: 25px;" placeholder="search....";>
+      	
+        <a href="mailto:someone@example.com"><i class="fa-solid fa-envelope" style="margin-left: 40px; color: black;"></i></a>
+            
+      </form>
+      </ul><br><br>
+       <h3>INTRODUCTION</h3>
+       <b><p>Frontend development refers to the part of web development that focuses on the user interface (UI) and user experience (UX) of a website or web application. Frontend developers use programming languages such as HTML, CSS, and JavaScript to create the look and feel of a website or application. Here are some key aspects of frontend development:</p>
+
+       <p>HTML: Hypertext Markup Language (HTML) is the backbone of frontend development. It is used to create the structure and content of a website or application. HTML provides a way to define the layout of web pages, including headings, paragraphs, images, and other elements.</p>
+
+         <p>CSS: Cascading Style Sheets (CSS) are used to style and format web pages. CSS provides a way to define colors, fonts, sizes, and other visual elements of a website or application. CSS also enables developers to create responsive designs that adapt to different screen sizes and devices.</p>
+
+           <p>JavaScript: JavaScript is a programming language that is used to create interactive and dynamic web pages. JavaScript allows developers to add animations, effects, and other interactive elements to a website or application. It is also used to create complex user interfaces and to interact with backend services through APIs.</p><br><br>
+
+          
+           <img src="https://cdn.ucfbootcamps.com/wp-content/uploads/sites/113/2020/11/what-percentage-front-end-developers.jpg" style="opacity: 1.0;z-index: -1;"> 
+           <br><br>
+            <p>Frontend Frameworks: Frontend frameworks such as React, Angular, and Vue are widely used in frontend development. These frameworks provide a set of tools and libraries that make it easier to create complex user interfaces and to manage the state of a web application.</p><br>
+            <p>As a front-end developer, you'll be responsible for creating the user interface of a website, to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.</b></p>
+
+
+
+
+
+      </div>
+
+
+</body>
+</html>

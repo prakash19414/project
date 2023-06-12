@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"  href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7tfmw0RQ8gUsW6GMl3uTFiPlf52Vq6hFGg&usqp=CAU">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+	<title>CSS</title>
+	<style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+		ul {
+         list-style-type: none;
+         height: 50px;
+         width: 100%;
+         overflow: hidden;
+         margin:  0;
+       }
+
+         li {
+            float: left;
+             text-decoration: none;
+       }
+
+        li a {
+          display: inline-block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        
+      }
+
+        li a:hover {
+           background-color: yellow;
+      }
+
+      .active {
+          background-color: green;
+      }
+      i{
+      	margin-right: 12px;
+      }
+      .card{
+      	height: 340px;
+      	width: 200px;
+      	border: 9px solid green;
+      	font-size: 20px;
+      	margin: 10px;
+      	padding: 5px;
+      	margin-top: 40px;
+      	margin-left: 20px;
+      	background-color: hotpink;
+      	color: white;
+      	transition: 0.5s;
+      }
+      .card:hover{
+      	box-shadow: 0 5px 0 2px red inset,0 5px 0 0 red ,
+      	             0 5px 0 0 red inset,0 5px 0 0 red ;
+      }
+      .main{
+      	height: 50px;
+      	width: 50px;
+      	background-color: red;
+      	transition: width 3s, height 2s ,transform 5s;
+      	cursor: pointer;
+      	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ7tfmw0RQ8gUsW6GMl3uTFiPlf52Vq6hFGg&usqp=CAU");
+      	margin: 20px;
+      	float: left;
+      }
+      .main:hover{
+      	width: 150px;
+      	height: 100px;
+      	transform:rotate(360deg) ;
+      }
+      table{
+      width: 100%;
+      border: 2px solid black;
+      margin-top: 1px;
+      
+    }
+      td,th{
+       border: 1px solid blue;
+             
+             padding: 6px;
+    }
+       tr:nth-child(even)
+    {
+      background-color: #dddddd;
+    }
+      .hello{
+        color: white;
+        border :4px solid yellow;
+        background-color: black;
+      }
+      .button{
+      cursor: pointer;
+      background-color: white;
+      color: blue;
+      padding: 10px;
+      border-radius: 30px;
+      border: 2px solid blue;
+      font-size: 20px;
+      width: 150px;
+     
+      font-family: cursive;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 20px;
+
+
+    }
+      .button:hover{
+      box-shadow: 0 10px 10px 0 hotpink inset,0 10px 10px 0 hotpink ,
+                         0 10px 10px 0 yellow inset,0 10px 10px 0 yellow ;      
+            
+    }
+    img{
+      height: 120px;
+    }
+    h3{
+      border: 5px double green;
+    }
+		
+	</style>
+</head>
+<body style="background-color:white;">
+	<ul style="background-color:green;" >
+    		<li><a class="active" href="intro.html"><i class="fa-solid fa-house"></i>INTRO</a></li>
+    		<li><a class="active" href="html.html"><i class="fa-brands fa-html5"></i>HTML</a></li>
+    		<li><a class="active" href="CSS.html"><i class="fa-brands fa-css3-alt"></i>CSS</a></li>
+    		<li><a class="active" href="JAVASCRIPT.html"><i class="fa-brands fa-square-js"></i>JAVASCRIPT</a></li>
+    		<li><a class="active" href="BOOTSTRAP.html" style="float:right;"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</a></li>
+    <form>
+      	<label for="search"><i class="fa-solid fa-magnifying-glass" style="margin-top: 18px;margin-left: 600px;"></i></label>
+      	<input type="search" id="search" style="margin-top: 10px;width: 200px;border-radius: 25px;" placeholder="search..." ;>
+      	<i class="fa-solid fa-envelope" style="margin-left: 40px;"></i>
+    </form>
+  </ul>
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2" style="background-color:yellow;height: 1010px;"><h3 style="text-align: center;">History of css</h3>
+       <b><p style="color:blue;">CSS (Cascading Style Sheets) was first introduced in 1996 by Håkon Wium Lie, a Norwegian web developer who worked at CERN, the European Organization for Nuclear Research. Lie developed CSS as a way to separate the presentation layer from the content layer of a web page, allowing developers to define the visual style of a website in a separate file or section.</p>
+
+        <p style="color:brown;" >The first version of CSS, CSS1, was published in 1996 as a recommendation by the World Wide Web Consortium (W3C), the international standards organization for the web. CSS1 included basic styling features such as font properties, colors, and backgrounds.</p>
+
+        <p style="color:red;">CSS2 was published as a recommendation in 1998 and included new features such as positioning and layout, as well as support for media-specific stylesheets. CSS2 also introduced the concept of cascading, where multiple style sheets can be applied to the same HTML document, with the most specific rules taking precedence over more general rules.</p>
+
+        <p style="color:purple;">CSS3, the current version of CSS, is a modular standard that has been under development since 1999. It includes a wide range of new features, such as new selectors, media queries, and flexible box layouts. CSS3 also includes support for animations, transitions, and other advanced visual effects.</p></b>
+
+      	
+      </div>
+      <div class="col-sm-8" style="background-color:white;">
+    <table style="background-color:hotpink;width: 100%;">
+    <tr>
+      <th>ELEMENTS</th>
+      <th>DEFINITION</th>
+      <th>SYNTAX</th>
+      <th>SAMPLE</th>
+    </tr>
+    <tr>
+  
+      <td>colors</td>
+      <td>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values..</td>
+      <td>
+        <a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/COLOR1.JPG" target="_self" style="border-radius: 50%;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+       <a href="https://www.w3schools.com/css/css_colors.asp"> <img src="https://www.wideskills.com/sites/default/files/subjects/CSS%20Tutorial/05/image-41.jpg" style="height:300px;width: 100%;"></a>
+      </td>
+                
+    </tr>
+    <tr>
+      <td>Box model</td>
+      <td> It consists of: margins, borders, padding, and the actual content.</td>
+      <td>
+        <a href="https://crypt.codemancers.com/images/boxmodel/compare_models.ec8c849825b4fb3e1e6177e49e15d800cb77bdeaa99e6adcf896a65af62ab99f.png" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+        
+        <a href="https://www.w3schools.com/css/css_boxmodel.asp"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZGCsLVxG2vII1f-7067ZhO5SvLak5gisX7A&usqp=CAU"></a>
+      </td>
+                
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>There are five position values:
+
+         static,
+         relative,
+        fixed,
+        absolute,
+        sticky.</td>
+      <td>
+        <a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/css-static-1.JPG" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+        <a href="https://www.w3schools.com/css/css_positioning.asp"><img src="https://cdn.educba.com/academy/wp-content/uploads/2019/12/CSS-Position.jpg" style="width:300px"></a>
+      </td>
+                
+    </tr>
+    <tr>
+      <td>images</td>
+      <td>Images are rounded images, circled images, thumbnail images . </td>
+      <td>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoTtD8BVIdwLAjh4StOEzKCEveHxsJWXEm_MV8DThkdI-kLxRrOUE21y5s1cODiCNRJdc&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+        <a href="https://www.w3schools.com/css/css3_images.asp"> <img  id="myImg" src="https://www.w3schools.com/css/paris.jpg" alt="The Pulpit Rock" width="304" height="228" style="border-radius: 50%;" ></a>
+
+            
+      </td>
+                
+    </tr>
+    <tr>
+      <td>Navigation bars</td>
+      <td>A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect sense. </td>
+      <td>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1D0-Kugb-jjPS2IE6o8IedI7AGW2URRYXH9FvCQdnmar-7HtRJbOdpMxWO5wIOWqpFvI&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+         <a href="https://www.w3schools.com/css/css_navbar.asp" style="text-decoration: none;color: black;padding: 20px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEzlDvO-7lnTTuQ8iNlILI5ESMpxij7Xv4tg&usqp=CAU"></a>
+      </td>
+                
+    </tr>
+    <tr>
+      </div>
+    
+  </div>
+  
+      <td>dropdowns</td>
+      <td>A sub-menu of a website or app's main menu. It is used to showcase content buttons (links) for each parent menu item.</td>
+      <td>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFki6nUHA0hudXVK9IDvq1Hqqor12zPr591d426wu3Vm4mm0e56tPaRgv0EH-vEzZsqOg&usqp=CAU" target="_self"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtb7evzDfTMvhxW4To5nKChCHJq4sViEzC7Q&usqp=CAU"></a>
+
+      </td>
+      <td>
+          <a href="https://www.w3schools.com/css/css_dropdowns.asp"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84DNZ27CvjQ5yGKKmtW3tw6_3AGlaIkZlH8K04q9sdjfc5S2U4rbmU1_QQngkCkyTZio&usqp=CAU"></a>     
+      </td>
+                
+    </tr>
+  </table>     
+
+      </div>
+
+      <div class="col-sm-2" style="background-color:#b04e12;height: 1010px;overflow-x:hidden ;overflow-y: scroll;"><h3 style="text-align:center;color: white;"><b>Advanced css</h3>
+        <h2 style="text-align:center;color: black;">1.Hover effects</h2>
+        <div class="card">
+          <p>"CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of web pages, including their layout, colors, fonts, and other visual elements."</p>
+        </div><hr>
+        <h2 style="text-align:center;color: black;">2.transitions</h2>
+          <div class="main"></div><br>
+          <h4 style="color:lightgreen;">for more information </h4><br>
+          <h5 style="color:white;font-size: 15px;">Types</h5><br>
+         <p style="color:darkblue;font">>transition</br>
+          >transition-delay</br>
+          >transition-duration<br>
+          >transition-property<br>
+          >transition-timing-function</p></br> <br>
+          <li><a href="https://www.w3schools.com/css/css3_transitions.asp"><button type="button">click here</button></a></li><br><br></br><hr>
+        <h2 style="text-align:center;color: black;">3.cards</h2>  
+         <div class="hello">
+           <h5 style="text-align:center;color: blue;font-size: 20px;">cars</h5><br><hr>
+           <p style="font-size: 20px;color: blue;">A car is a vehicle that has wheels, carries a small number of passengers, and is moved by an engine or a motor. </p><br><hr>
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXYHXOPn69HFbVfVgxMPL6nuMBkIwpVchQQ&usqp=CAU" style="width:160px;margin-left:20px;height: 100%;"></br><hr>
+           <div class="button">click here</b></div><hr>
+
+         </div><hr>
+            <h5 style="text-align:center;color: blue;font-size: 20px;">For more information</h5>
+            <li><a href="https://www.w3schools.com/css/css3_gradients.asp" style="color: blue;font-size: 19px;margin-left: 100px;"><b><button type="button" >click here</button></b></a></li>
+           
+    </div>
+   </div>
+
+
+</body>
+</html>
